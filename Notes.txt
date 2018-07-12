@@ -1,0 +1,42 @@
+- Module Package Management
+npm, Bower, JSpm -> recommended npm
+Security check
+Node Security project, retire -> recommended NSP
+
+npm install -g nsp
+then to verify/check type nsp check in command line
+
+- Module Development Server
+http-server, live-server, Express, budo, webpack dev, BrowserSync
+Express recommended
+
+Sharing Work in Progress
+localtunnel, ngrok, now(Hosting Persists), surge (Serves only static HTML files, Hosting Persists)
+demo localtunnel
+npm install localtunnel -g
+
+lt --port 3000
+lt --port 3000 subdomain adbul
+
+- Module Automation
+Grunt, Gulp, NPM Scripts -> recommended NPM Scripts
+Automation with Npm Scripts
+mention the scripts in the Scripts section of package.json file
+e.g npm start
+Pre/Post Hooks by convetion prefix the script with pre or post
+npm run security-check
+To run concurrent tasks/paraller tasks use pkg npm-run-all --parallel open:src security-check
+npm start -s (displays the info we want to see only)
+
+- Module Transpiling
+Babel, TypeSrcipt, Elm
+used ES6 syntax import chalk from 'chalk';
+then use babel-node instead of node in start scripts of package.json
+
+- Module Bundling
+Module Formats: IIFE, AMD, CJS, UMD, ES6 Modules -> recommended ES6 Modules
+Bundler: RequireJS, Browserify, webpack, roll up, JSPM
+
+-Module Linting
+JS Lint, JS Hint, ES Lint, TS Lint if you're using TypeSrcipt.
+ESLint is configured using .eslintrc.json file 
